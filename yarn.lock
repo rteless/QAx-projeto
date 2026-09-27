@@ -80,12 +80,12 @@
   resolved "https://registry.npmjs.org/@cucumber/tag-expressions/-/tag-expressions-9.1.0.tgz"
   integrity sha512-bvHjcRFZ+J1TqIa9eFNO1wGHqwx4V9ZKV3hYgkuK/VahHx73uiP4rKV3JVrvWSMrwrFvJG6C8aEwnCWSvbyFdQ==
 
-"@playwright/test@^1.61.1", "@playwright/test@>=1.44":
-  version "1.61.1"
-  resolved "https://registry.npmjs.org/@playwright/test/-/test-1.61.1.tgz"
-  integrity sha512-8nKv6+0RJSL9FE4jYOEGXnPeM/Hg12qZpmqzZjRh3qM0Y7c3z1mrOTfFLids72RDQYVh9WpLEfR5WdpNX4fkig==
+"@playwright/test@^1.61.1", "@playwright/test@>=1.44", "@playwright/test@>=1.62.0":
+  version "1.63.0"
+  resolved "https://registry.npmjs.org/@playwright/test/-/test-1.63.0.tgz"
+  integrity sha512-oxMK4vllB9RK5NQ2l1pq1IfOf2AvnEuj/vYGDj0H2nMtmtZpKtCwt/l00GEO6xjGfpBNAvjovvYdCm50dRQkpQ==
   dependencies:
-    playwright "1.61.1"
+    playwright "1.63.0"
 
 "@teppeis/multimaps@^3.0.0", "@teppeis/multimaps@3.0.0":
   version "3.0.0"
@@ -99,6 +99,25 @@
   dependencies:
     undici-types "~8.3.0"
 
+allure-commandline@^2.46.1:
+  version "2.46.1"
+  resolved "https://registry.npmjs.org/allure-commandline/-/allure-commandline-2.46.1.tgz"
+  integrity sha512-4HTxbXR9D2+cJV9z4MO/IUa7sfYiLLXBP3/4MWSqC63ey55wBMvXAk83yZYwJ2t+jKU1Z7QW6LgCUx0BhPy9EQ==
+
+allure-js-commons@3.12.2:
+  version "3.12.2"
+  resolved "https://registry.npmjs.org/allure-js-commons/-/allure-js-commons-3.12.2.tgz"
+  integrity sha512-5gVM4Fedf5q19tQ6zussSIaNC5tooTbtvJMBZFu1c7Zm35qfiBAPayMgxxHm5rOTwkyRInj+XShQPAG8ixrGeg==
+  dependencies:
+    md5 "^2.3.0"
+
+allure-playwright@^3.12.2, allure-playwright@3.12.2:
+  version "3.12.2"
+  resolved "https://registry.npmjs.org/allure-playwright/-/allure-playwright-3.12.2.tgz"
+  integrity sha512-XTzCAOyAIdx8gZE/skh3FJgPWmU5LmPO5fF8iRXEEVGWU5iL4rRlFh+KD7T0jo7DuCj7W2MpL6mnNWA+Zo54QA==
+  dependencies:
+    allure-js-commons "3.12.2"
+
 ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz"
@@ -108,6 +127,11 @@ buffer-from@^1.0.0:
   version "1.1.2"
   resolved "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz"
   integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
+
+charenc@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/charenc/-/charenc-0.0.2.tgz"
+  integrity sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==
 
 class-transformer@0.5.1:
   version "0.5.1"
@@ -133,6 +157,11 @@ commander@14.0.2:
   resolved "https://registry.npmjs.org/commander/-/commander-14.0.2.tgz"
   integrity sha512-TywoWNNRbhoD0BXs1P3ZEScW8W5iKrnbithIl0YH+uCmBd0QpPOA8yc82DS3BIE5Ma6FnBVUsJ7wVUDz4dvOWQ==
 
+crypt@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/crypt/-/crypt-0.0.2.tgz"
+  integrity sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==
+
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz"
@@ -142,6 +171,11 @@ fdir@^6.5.0:
   version "6.5.0"
   resolved "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz"
   integrity sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==
+
+is-buffer@~1.1.6:
+  version "1.1.6"
+  resolved "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz"
+  integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
 is-fullwidth-code-point@^3.0.0:
   version "3.0.0"
@@ -157,6 +191,15 @@ luxon@^3.5.0:
   version "3.7.2"
   resolved "https://registry.npmjs.org/luxon/-/luxon-3.7.2.tgz"
   integrity sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==
+
+md5@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/md5/-/md5-2.3.0.tgz"
+  integrity sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==
+  dependencies:
+    charenc "0.0.2"
+    crypt "0.0.2"
+    is-buffer "~1.1.6"
 
 mime-db@^1.54.0:
   version "1.54.0"
@@ -194,19 +237,17 @@ playwright-bdd@^9.2.1:
     mime-types "^3.0.2"
     tinyglobby "0.2.17"
 
-playwright-core@1.61.1:
-  version "1.61.1"
-  resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.61.1.tgz"
-  integrity sha512-h7Qlt6m4REp25qvIdvbDtVmD4LqVXfpRxhORv9L0jzETM05p4fuPJ3dKyuSXQxDSbXnmS79HAgi9589lGSpLkg==
+playwright-core@1.63.0:
+  version "1.63.0"
+  resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.63.0.tgz"
+  integrity sha512-rYCsBF/M5HjUch52bbtVONEFjv6Xu8sm8h72dNlR5bzIE1fvC/bxgspzkjSfU+MweEMmPM8KJebG6nnyxo5mCg==
 
-playwright@1.61.1:
-  version "1.61.1"
-  resolved "https://registry.npmjs.org/playwright/-/playwright-1.61.1.tgz"
-  integrity sha512-DWnY5o3YbLWK4GovuAVwpqL+1VwGNdUGrRr++8j8PtQQzvAVZUIMjKQ90fY689sEJZJBbZVw1rXaOKSTitkzPQ==
+playwright@1.63.0:
+  version "1.63.0"
+  resolved "https://registry.npmjs.org/playwright/-/playwright-1.63.0.tgz"
+  integrity sha512-+7ziBLidS4NaNCdt57SUDT+wYmmd5fmiQejUic/kb+YsYSCPyOOE9sebzMjNmQrsnNpDJqd4WHvV/8lfKfUDUg==
   dependencies:
-    playwright-core "1.61.1"
-  optionalDependencies:
-    fsevents "2.3.2"
+    playwright-core "1.63.0"
 
 reflect-metadata@0.2.2:
   version "0.2.2"

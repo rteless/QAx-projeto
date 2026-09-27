@@ -29,7 +29,14 @@ export class LoginPage {
     await expect(this.expectedTitle).toBeVisible();
   }
 
-  async verificarMensagemErro() {
+  async verificarMensagemErro(mensagem) {
     await expect(this.errorMessage).toBeVisible();
+    await expect(this.errorMessage).toHaveText(mensagem);
+  }
+
+  async verificarElementosVisiveis() {
+    await expect(this.usernameInput).toBeVisible();
+    await expect(this.passwordInput).toBeVisible();
+    await expect(this.loginButton).toBeVisible();
   }
 }

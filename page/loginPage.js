@@ -6,6 +6,7 @@ export class LoginPage {
     this.passwordInput = page.locator("#password");
     this.loginButton = page.locator("#login-button");
     this.expectedTitle = page.getByText("Products");
+    this.errorMessage = page.locator(".error-message-container");
   }
 
   async navegarParaLogin() {
@@ -26,5 +27,9 @@ export class LoginPage {
 
   async verificarLoginBemSucedido() {
     await expect(this.expectedTitle).toBeVisible();
+  }
+
+  async verificarMensagemErro() {
+    await expect(this.errorMessage).toBeVisible();
   }
 }

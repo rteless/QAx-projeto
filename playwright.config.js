@@ -6,11 +6,15 @@ import { defineBddConfig } from "playwright-bdd";
 /** @type {typeof process} */
 const process_env = process;
 
-const testDir = defineBddConfig({
+/*const testDir = defineBddConfig({
   features: "./feature/*.feature",
   steps: "./step/*.js",
 });
-
+*/
+const bddTestDir = defineBddConfig({
+  features: "./feature/*.feature",
+  steps: "./step/*.js",
+});
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -23,7 +27,7 @@ const testDir = defineBddConfig({
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir,
+  // testDir: bddTestDir,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -51,9 +55,13 @@ export default defineConfig({
   projects: [
     {
       name: "chromium",
+      testDir: bddTestDir,
       use: { ...devices["Desktop Chrome"] },
     },
-
+    {
+      name: "api",
+      testDir: "./api",
+    },
     /* {
       name: "firefox",
       use: { ...devices["Desktop Firefox"] },

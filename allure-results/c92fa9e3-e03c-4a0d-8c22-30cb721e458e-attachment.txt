@@ -1,5 +1,0 @@
-✅Página de login carregada com sucesso.
-✅Usuário preenchido com sucesso.
-✅Senha preenchida com sucesso.
-✅Botão de login clicado com sucesso.
-✅Mensagem de erro exibida com sucesso.

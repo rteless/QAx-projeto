@@ -1,0 +1,6 @@
+projectKey=playwright-mark
+serverUrl=http://localhost:9000
+serverVersion=26.9.0.129388
+dashboardUrl=http://localhost:9000/dashboard?id=playwright-mark
+ceTaskId=2df66132-ce97-459f-9e1b-e1b31b4ffc8e
+ceTaskUrl=http://localhost:9000/api/ce/task?id=2df66132-ce97-459f-9e1b-e1b31b4ffc8e

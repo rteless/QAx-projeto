@@ -52,7 +52,7 @@ When("o usuario entra com credenciais inválidas", async ({}) => {
 Then(
   "uma mensagem de erro deve ser exibida indicando credenciais inválidas",
   async ({}) => {
-    await loginPage.verificarMensagemErro();
+    await loginPage.verificarMensagemErro("Credenciais inválidas");
     console.log("✅ Mensagem de erro exibida com sucesso.");
   },
 );

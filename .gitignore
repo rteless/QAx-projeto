@@ -10,7 +10,7 @@ allure-results/
 allure-report/
 
 # Arquivos gerados
-#.features-gen/
+.features-gen/
 .scannerwork/
 
 # Logs
